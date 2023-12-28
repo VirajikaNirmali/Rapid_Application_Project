@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.MembersBookController">
+   <children>
+      <ImageView fx:id="MemberBookImg" fitHeight="465.0" fitWidth="769.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/img3.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-1.0" prefHeight="80.0" prefWidth="769.0" style="-fx-background-color: yellow;" />
+      <Label layoutX="303.0" layoutY="10.0" text="Books">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bookTable" layoutX="32.0" layoutY="130.0" prefHeight="250.0" prefWidth="706.0">
+        <columns>
+          <TableColumn fx:id="bookIDColumn" prefWidth="55.0" text="Book ID" />
+          <TableColumn fx:id="bookNameColumn" prefWidth="511.0" text="Book Name" />
+            <TableColumn fx:id="isAvailableColumn" minWidth="0.0" prefWidth="139.0" text="Is Available" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnHome" layoutX="271.0" layoutY="413.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="60.0" prefWidth="216.0" text="Home">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
